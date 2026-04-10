@@ -79,3 +79,6 @@ From the results:
 *"I couldn't help it. I snapped and took the record."*
 
 This confession clearly identifies **Rico Delgado** as the person responsible for stealing the vinyl record.
+
+## Answer
+**Rico Delgado**
