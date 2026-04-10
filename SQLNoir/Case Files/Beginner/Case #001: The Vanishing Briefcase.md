@@ -45,11 +45,9 @@ From the result, we learn that a briefcase containing sensitive documents was st
 
 From Step 1, we had three suspects wearing trench coats:
 
-Frankie Lombardi – scar on left cheek
-
-Vincent Malone – scar on left cheek
-
-Christopher Black – scar on right cheek
+- Frankie Lombardi – scar on left cheek
+- Vincent Malone – scar on left cheek
+- Christopher Black – scar on right cheek
 
 Since the witness specifically mentioned a scar on the left cheek, we can eliminate Christopher Black from our suspect list.
 
