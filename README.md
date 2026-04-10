@@ -23,8 +23,8 @@ Writeups for cases from **[SQLNoir](https://www.sqlnoir.com/)**, an interactive 
 
 | Case | Difficulty | Writeup |
 |-----|------------|--------|
-| Case #001 – The Vanishing Briefcase | Beginner | [View Writeup]([SQLNoir/Case-Files/Beginner/Case #001: The Vanishing Briefcase.md](https://github.com/eddyzlkfly/Cybersecurity-Writeups/blob/main/SQLNoir/Case%20Files/Beginner/Case%20%23001%3A%20The%20Vanishing%20Briefcase.md)) |
-| Case #002 – The Stolen Sound | Beginner | [View Writeup]([SQLNoir/Case-Files/Beginner/Case-002.md](https://github.com/eddyzlkfly/Cybersecurity-Writeups/blob/main/SQLNoir/Case%20Files/Beginner/Case%20%23002%3A%20The%20Stolen%20Sound.md)) |
+| Case #001 – The Vanishing Briefcase | Beginner | [View Writeup](SQLNoir/Case%20Files/Beginner/Case%20%23001:%20The%20Vanishing%20Briefcase.md)|
+| Case #002 – The Stolen Sound | Beginner | [View Writeup](SQLNoir/Case%20Files/Beginner/Case%20%23002:%20The%20Stolen%20Sound.md)|
 
 ---
 
