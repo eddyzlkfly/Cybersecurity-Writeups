@@ -11,4 +11,4 @@ Set in the gritty 1980s, a valuable briefcase has disappeared from the Blue Note
 # Investigation Steps
 ## Step - 1
 
-SELECT * FROM suspects WHERE attire = "trench coat"
+'''sql SELECT * FROM suspects WHERE attire = "trench coat"
