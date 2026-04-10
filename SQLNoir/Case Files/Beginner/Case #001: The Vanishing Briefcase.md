@@ -33,12 +33,31 @@ From the results, the suspects are:
 
 ## 2 - Retrieve crime scene details
 
+Since the case description already tells us that the incident happened at Blue Note Lounge, we can query the crime_scene table using that location to see what information we can gather about the incident.
+```sql
 SELECT * FROM crime_scene WHERE location = "Blue Note Lounge"
-
+```
 | id | date | type | location | description |
 |----------|----------|----------|----------|----------|
 | 76   | 19851120   | theft   | Blue Note Lounge   | A briefcase containing sensitive documents vanished. A witness reported a man in a trench coat with a scar on his left cheek fleeing the scene.
-   
+
+From the result, we learn that a briefcase containing sensitive documents was stolen. More importantly, the description mentions that the witness saw a man wearing a trench coat with a scar on his left cheek fleeing the scene.
+
+This clue helps us narrow down our suspects even further. From Step 1, we had three suspects wearing trench coats:
+
+Frankie Lombardi – scar on left cheek
+Vincent Malone – scar on left cheek
+Christopher Black – scar on right cheek
+
+Since the witness specifically mentioned a scar on the left cheek, we can eliminate Christopher Black from our suspect list.
+
+Now we are left with two possible suspects:
+
+Frankie Lombardi
+Vincent Malone
+
+In the next step, we will check their interview transcripts to determine which one is responsible for the theft.
+
 ## 3
 
 SELECT * FROM interviews WHERE suspect_id IN (3, 183)
