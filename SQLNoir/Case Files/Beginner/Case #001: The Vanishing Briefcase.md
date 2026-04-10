@@ -49,7 +49,7 @@ From Step 1, we had three suspects wearing trench coats:
 - Vincent Malone – scar on left cheek
 - Christopher Black – scar on right cheek
 
-Since the witness specifically mentioned a scar on the left cheek, we can eliminate Christopher Black from our suspect list.
+Since the witness specifically mentioned a scar on the *left cheek*, we can eliminate *Christopher Black* from our suspect list.
 
 Now we are left with two possible suspects:
 
