@@ -77,4 +77,5 @@ From the results, we can see that `suspect_id = 3` has no transcript recorded `(
 
 This clearly confirms that **Vincent Malone** is the person responsible for stealing the briefcase.
 
-
+## Answer
+**Vincent Malone**
