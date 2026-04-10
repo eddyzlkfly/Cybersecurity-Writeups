@@ -9,7 +9,7 @@ Set in the gritty 1980s, a valuable briefcase has disappeared from the Blue Note
 3. Verify the suspect using their interview transcript.
 
 # Investigation Steps
-## 1 - Identify suspects matching the witness description
+## 1) Identify suspects matching the witness description
 
 Since the witness mentioned seeing a man wearing a trench coat, the first thing to do is filter the suspects based on their attire.
 
@@ -31,7 +31,7 @@ From the results, the suspects are:
 - **Vincent Malone**
 - **Christopher Black**
 
-## 2 - Retrieve crime scene details
+## 2) Retrieve crime scene details
 
 Since the case description already tells us that the incident happened at Blue Note Lounge, we can query the `crime_scene` table using that `location` to see what information we can gather about the incident.
 ```sql
@@ -58,7 +58,7 @@ Now we are left with two possible suspects:
 
 In the next step, we will check their interview transcripts to determine which one is responsible for the theft.
 
-## 3 - Verify the suspect using interview transcripts
+## 3) Verify the suspect using interview transcripts
 
 Since we have already narrowed down our suspects to **Frankie Lombardi (ID 3)** and **Vincent Malone (ID 183)**, the next step is to check their interview transcripts.
 
