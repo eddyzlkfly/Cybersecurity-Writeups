@@ -41,12 +41,14 @@ SELECT * FROM crime_scene WHERE location = "Blue Note Lounge"
 |----------|----------|----------|----------|----------|
 | 76   | 19851120   | theft   | Blue Note Lounge   | A briefcase containing sensitive documents vanished. A witness reported a man in a trench coat with a scar on his left cheek fleeing the scene.
 
-From the result, we learn that a briefcase containing sensitive documents was stolen. More importantly, the description mentions that the witness saw a man wearing a trench coat with a scar on his left cheek fleeing the scene.
+From the result, we learn that a briefcase containing sensitive documents was stolen. More importantly, the description mentions that the witness saw a man wearing a trench coat with a scar on his left cheek fleeing the scene. This clue helps us narrow down our suspects even further.
 
-This clue helps us narrow down our suspects even further. From Step 1, we had three suspects wearing trench coats:
+From Step 1, we had three suspects wearing trench coats:
 
 Frankie Lombardi – scar on left cheek
+
 Vincent Malone – scar on left cheek
+
 Christopher Black – scar on right cheek
 
 Since the witness specifically mentioned a scar on the left cheek, we can eliminate Christopher Black from our suspect list.
