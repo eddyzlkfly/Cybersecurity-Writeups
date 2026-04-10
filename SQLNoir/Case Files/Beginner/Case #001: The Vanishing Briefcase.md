@@ -26,7 +26,7 @@ SELECT * FROM crime_scene WHERE location = "Blue Note Lounge"
 | id | date | type | location | description |
 |----------|----------|----------|----------|----------|
 | 76   | 19851120   | theft   | Blue Note Lounge   | A briefcase containing sensitive documents vanished. A witness reported a man in a trench coat with a scar on his left cheek fleeing the scene.
-   |
+   
 
 
 
