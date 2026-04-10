@@ -27,13 +27,13 @@ The query returns three suspects who match the description. These are the indivi
 
 From the results, the suspects are:
 
-- Frankie Lombardi
-- Vincent Malone
-- Christopher Black
+- **Frankie Lombardi**
+- **Vincent Malone**
+- **Christopher Black**
 
 ## 2 - Retrieve crime scene details
 
-Since the case description already tells us that the incident happened at Blue Note Lounge, we can query the crime_scene table using that location to see what information we can gather about the incident.
+Since the case description already tells us that the incident happened at Blue Note Lounge, we can query the `crime_scene` table using that `location` to see what information we can gather about the incident.
 ```sql
 SELECT * FROM crime_scene WHERE location = "Blue Note Lounge"
 ```
@@ -49,22 +49,32 @@ From Step 1, we had three suspects wearing trench coats:
 - Vincent Malone – scar on left cheek
 - Christopher Black – scar on right cheek
 
-Since the witness specifically mentioned a scar on the *left cheek*, we can eliminate *Christopher Black* from our suspect list.
+Since the witness specifically mentioned a scar on the **left cheek**, we can eliminate **Christopher Black** from our suspect list.
 
 Now we are left with two possible suspects:
 
-Frankie Lombardi
-Vincent Malone
+- **Frankie Lombardi**
+- **Vincent Malone**
 
 In the next step, we will check their interview transcripts to determine which one is responsible for the theft.
 
-## 3
+## 3 - Verify the suspect using interview transcripts
 
+Since we have already narrowed down our suspects to **Frankie Lombardi (ID 3)** and **Vincent Malone (ID 183)**, the next step is to check their interview transcripts.
+
+To do this, we query the interviews table using their `suspect_id` values.
+```sql
 SELECT * FROM interviews WHERE suspect_id IN (3, 183)
-
+```
 | suspect_id | transcript |
 |----------|----------|
 | 3   | NULL   |
 | 183   | I wasn’t going to steal it, but I did.   |
+
+From the results, we can see that `suspect_id = 3` has no transcript recorded `(NULL)`. However, `suspect_id = 183` has a statement that says:
+
+*"I wasn't going to steal it, but I did."*
+
+This clearly confirms that **Vincent Malone** is the person responsible for stealing the briefcase.
 
 
