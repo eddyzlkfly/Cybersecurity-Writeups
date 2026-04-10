@@ -11,18 +11,22 @@ In the neon glow of 1980s Los Angeles, the West Hollywood Records store was rock
 ## Investigation Steps
 ## Step 1 – Retrieve crime scene details
 
-Since the case description already tells us that the theft happened on July 15, 1983, we can query the crime_scene table using that date to retrieve the crime scene report.
+Since the case description already tells us that the theft happened on `July 15, 1983`, we can query the `crime_scene` table using that date to retrieve the crime scene report.
 ```sql
 SELECT * FROM crime_scene WHERE date = 19830715;
 ```
-From the result, we confirm that a prized vinyl record was stolen from West Hollywood Records during a busy evening. Now that we have the crime_scene_id (65), we can use it to retrieve witness statements related to this incident in the next step.
+| id | date | type | location | description |
+|----------|----------|----------|----------|----------|
+| 65   | 19830715   | theft   | 	West Hollywood Records   | A prized vinyl record was stolen from the store during a busy evening  |
 
-Step 2 – Check witness statements
+From the result, we confirm that a prized vinyl record was stolen from **West Hollywood Records** during a busy evening. Now that we have the `crime_scene_id (65)`, we can use it to retrieve witness statements related to this incident in the next step.
 
-Now that we know the crime_scene_id is 65, we can query the witnesses table to see what clues the witnesses reported during the incident.
+## Step 2 – Check witness statements
 
+Now that we know the `crime_scene_id` is **65**, we can query the witnesses table to see what clues the witnesses reported during the incident.
+```sql
 SELECT * FROM witnesses WHERE crime_scene_id = 65;
-
+```
 From the witness statements, we get two important clues:
 
 The suspect was seen wearing a red bandana.
