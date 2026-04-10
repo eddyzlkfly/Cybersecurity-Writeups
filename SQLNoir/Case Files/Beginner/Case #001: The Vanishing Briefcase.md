@@ -7,3 +7,8 @@ Set in the gritty 1980s, a valuable briefcase has disappeared from the Blue Note
 1. Retrieve the correct crime scene details to gather the key clue.
 2. Identify the suspect whose profile matches the witness description.
 3. Verify the suspect using their interview transcript.
+
+# Investigation Steps
+## Step - 1
+
+SELECT * FROM suspects WHERE attire = "trench coat"
