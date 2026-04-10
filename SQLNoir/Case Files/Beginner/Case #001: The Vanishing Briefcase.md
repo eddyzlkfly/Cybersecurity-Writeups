@@ -9,9 +9,15 @@ Set in the gritty 1980s, a valuable briefcase has disappeared from the Blue Note
 3. Verify the suspect using their interview transcript.
 
 # Investigation Steps
-## 1
+## 1 - Identify suspects matching the witness description
 
+Since the witness mentioned seeing a man wearing a trench coat, the first thing to do is filter the suspects based on their attire.
+
+To do this, we run the following SQL query to retrieve suspects who were wearing a trench coat.
+```sql
 SELECT * FROM suspects WHERE attire = "trench coat"
+```
+The query returns three suspects who match the description. These are the individuals who were wearing a trench coat, so they become our primary suspects for now.
 
 | id | name | attire | scar |
 |----------|----------|----------|----------|
@@ -19,7 +25,13 @@ SELECT * FROM suspects WHERE attire = "trench coat"
 | 183   | Vincent Malone   | trench coat   | left cheek   |
 | 237   | Christopher Black   | trench coat   | right cheek   |
 
-## 2
+From the results, the suspects are:
+
+- Frankie Lombardi
+- Vincent Malone
+- Christopher Black
+
+## 2 - Retrieve crime scene details
 
 SELECT * FROM crime_scene WHERE location = "Blue Note Lounge"
 
