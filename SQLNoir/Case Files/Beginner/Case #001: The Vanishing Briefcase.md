@@ -15,9 +15,9 @@ SELECT * FROM suspects WHERE attire = "trench coat"
 
 | id | name | attire | scar |
 |----------|----------|----------|----------|
-| Data A   | Data B   | Data C   | Data D   |
-| Data E   | Data F   | Data G   | Data H   |
-| Data I   | Data J   | Data K   | Data L   |
+| 3   | Frankie Lombardi   | trench coat   | left cheek   |
+| 183   | Vincent Malone   | trench coat   | left cheek   |
+| 237   | Christopher Black   | trench coat   | right cheek   |
 
 ## 2
 
