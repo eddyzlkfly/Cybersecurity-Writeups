@@ -9,6 +9,18 @@ Set in the gritty 1980s, a valuable briefcase has disappeared from the Blue Note
 3. Verify the suspect using their interview transcript.
 
 # Investigation Steps
-## Step - 1
+## 1
 
-'''sql SELECT * FROM suspects WHERE attire = "trench coat"
+SELECT * FROM suspects WHERE attire = "trench coat"
+
+| id | name | attire | scar |
+|----------|----------|----------|----------|
+| Data A   | Data B   | Data C   | Data D   |
+| Data E   | Data F   | Data G   | Data H   |
+| Data I   | Data J   | Data K   | Data L   |
+
+## 2
+
+
+
+
