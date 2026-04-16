@@ -73,3 +73,98 @@ Another mentioned a hotel with "Sunset" in its name
 This suggests that the suspect may have stayed at a hotel before or after the incident.
 These clues will help us identify the exact location and narrow down the suspect further in the next step.
 
+## 4) Identify hotel check-in records based on clues
+
+From the previous step, we obtained two important clues:
+
+- The suspect checked into a hotel on **August 13**
+- The hotel name contains the word **"Sunset"**
+
+Based on this information, we query the `hotel_checkins` table to find all matching records.
+
+```sql
+SELECT * FROM hotel_checkins 
+WHERE check_in_date LIKE "%0813" 
+AND hotel_name LIKE "%Sunset%";
+```
+| id  | person_id | hotel_name          | check_in_date |
+| --- | --------- | ------------------- | ------------- |
+| 2   | 27        | Sunset Bay Hotel    | 19860813      |
+| 7   | 12        | Sunset Harbor Hotel | 19860813      |
+| 10  | 15        | Sunset Palms Resort | 19860813      |
+| 12  | 17        | Sunset Shore Hotel  | 19860813      |
+| 14  | 19        | Sunset Marina Inn   | 19860813      |
+| ... | ...       | ...                 | ...           |
+| 99  | 10        | Sunset Cove Inn     | 19860813      |
+| 100 | 54        | Sunset Crest Resort | 19860813      |
+
+From the results, we can see that there are many individuals who checked into hotels with **"Sunset"** in the name on **August 13**.
+
+However, not all of these are relevant to our investigation.
+We need to correlate these records with our previous suspects:
+
+- **Carlos Mendez (ID: 101)**
+- **Raul Gutierrez (ID: 102)**
+
+Since none of the person_id values in the results match **101** or **102**, this suggests that:
+
+- Either the suspect used a different identity
+- Or the suspect is not one of our initial suspects
+
+This gives us a new direction for the investigation and indicates that we need to expand our search in the next step.
+
+## 5) Filter suspects based on suspicious activity
+
+From the previous step, we obtained a large list of individuals who checked into hotels with **"Sunset"** in the name on **August 13**.
+
+To narrow down the suspects further, we look into the `surveillance_records` table to identify any **suspicious activities** associated with these individuals.
+
+```sql
+SELECT * FROM surveillance_records WHERE person_id BETWEEN 6 AND 55;
+```
+| id  | person_id | hotel_checkin_id | suspicious_activity                 |
+| --- | --------- | ---------------- | ----------------------------------- |
+| 6   | 6         | 34               | Spotted entering late at night      |
+| 7   | 7         | 89               | Seen arguing with an unknown person |
+| 8   | 8         | 2                | Left suddenly at 3 AM               |
+| ... | ...       | ...              | ...                                 |
+
+From the results, most individuals do not show any clearly suspicious behavior (many entries are NULL or normal activities).
+
+However, a few stand out:
+
+- Person ID 6 → Spotted entering late at night
+- Person ID 7 → Seen arguing with an unknown person
+- Person ID 8 → Left suddenly at 3 AM
+
+These behaviors appear more suspicious compared to others.
+
+So at this point, instead of analyzing everyone, we narrow down our focus to these three individuals based on instinct and relevance of their activities.
+
+In the next step, we will check their confession records to identify the actual suspect.
+
+## 6) Identify the culprit through confession
+
+From the previous step, we narrowed down our suspects to three individuals:
+
+- Person ID 6  
+- Person ID 7  
+- Person ID 8  
+
+To determine who is responsible, we check their confession records one by one.
+
+After testing each suspect individually, we find that only one of them has a clear confession.
+
+```sql
+SELECT * FROM confessions WHERE person_id = 8;
+```
+| id | person_id | confession                                                                 |
+| -- | --------- | -------------------------------------------------------------------------- |
+| 73 | 8         | Alright! I did it. I was paid to make sure he never left the marina alive. |
+
+From the result, **Person ID 8** admits to the crime.
+
+This confirms that he is the individual responsible for the murder.
+
+# Answer
+**Thomas Brown**
