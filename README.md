@@ -25,7 +25,7 @@ Writeups for cases from **[SQLNoir](https://www.sqlnoir.com/)**, an interactive 
 |-----|------------|--------|
 | Case #001 – The Vanishing Briefcase | Beginner | [View Writeup](SQLNoir/Case%20Files/Beginner/Case%20%23001:%20The%20Vanishing%20Briefcase.md)|
 | Case #002 – The Stolen Sound | Beginner | [View Writeup](SQLNoir/Case%20Files/Beginner/Case%20%23002:%20The%20Stolen%20Sound.md)|
-
+| Case #003 – The Miami Marina Murder | Intermediate | [View Writeup](SQLNoir/Case%20Files/Intermediate/Case%20%23003:%20The%20Miami%20Marina%20Murder.md)|
 ---
 
 ### Capture The Flag (CTF)
