@@ -17,10 +17,11 @@ Each writeup documents the investigation process step by step, including the SQL
 
 ## Cases
 
-| Case | Difficulty | Status |
-|-----|------------|--------|
-| Case #001 – The Vanishing Briefcase | Beginner | Solved |
-| Case #002 – The Stolen Sound | Beginner | Solved |
+| Case                              | Difficulty   | Status |
+|----------------------------------|-------------|--------|
+| Case #001 - The Vanishing Briefcase | Beginner    | Solved |
+| Case #002 - The Stolen Sound       | Beginner    | Solved |
+| Case #003 - The Miami Marina Murder | Intermediate | Solved |
 
 ---
 
