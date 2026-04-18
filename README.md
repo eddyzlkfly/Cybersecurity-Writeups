@@ -53,7 +53,7 @@ Welcome to my cybersecurity portfolio. This repository serves as an index of my 
 - Case #002 – The Stolen Sound  
 👉 https://eddyzlkfly.github.io/posts/sqlnoircase02/
 
-- Case #003 – Coral Bay Marina Murder  
+- Case #003 – The Miami Marina Murder  
 👉 https://eddyzlkfly.github.io/posts/sqlnoircase03/
 
 ---
@@ -93,4 +93,4 @@ Welcome to my cybersecurity portfolio. This repository serves as an index of my 
 ## 🚀 Connect
 
 - GitHub: https://github.com/eddyzlkfly  
-- LinkedIn: https://www.linkedin.com/in/your-linkedin-username/
+- LinkedIn: https://www.linkedin.com/in/eddyzlkfly/
