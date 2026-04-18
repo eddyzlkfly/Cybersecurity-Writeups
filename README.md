@@ -1,43 +1,96 @@
-# Cybersecurity Writeups
+# 🔐 Cybersecurity Writeups
 
-This repository contains my cybersecurity learning journey, including penetration testing labs, CTF challenges, and SQL investigation exercises.
+Welcome to my cybersecurity portfolio. This repository serves as an index of my hands-on writeups, covering web penetration testing, CTF challenges, and SQL-based investigations.
 
-Each writeup documents the steps, tools, queries, and reasoning used to solve the challenge.
-
----
-
-## Writeup Categories
-
-### Web Application Pentesting
-Writeups related to web security testing and vulnerability exploitation.
-
-| Lab | Description | Status |
-|----|-------------|--------|
-| LazyWeb | Web application penetration testing lab | Coming Soon |
+🌐 **Full writeups available here:**  
+👉 https://eddyzlkfly.github.io
 
 ---
 
-### SQL Investigations
+## 🌐 Web Penetration Testing
 
-Writeups for cases from **[SQLNoir](https://www.sqlnoir.com/)**, an interactive SQL detective game where investigations are solved using SQL queries.
+### LazyWeb
+- VULN 1 – Exposed Git Repository  
+👉 https://eddyzlkfly.github.io/posts/lazywebvuln01/
 
-| Case | Difficulty | Writeup |
-|-----|------------|--------|
-| Case #001 – The Vanishing Briefcase | Beginner | [View Writeup](SQLNoir/Case%20Files/Beginner/Case%20%23001:%20The%20Vanishing%20Briefcase.md)|
-| Case #002 – The Stolen Sound | Beginner | [View Writeup](SQLNoir/Case%20Files/Beginner/Case%20%23002:%20The%20Stolen%20Sound.md)|
-| Case #003 – The Miami Marina Murder | Intermediate | [View Writeup](SQLNoir/Case%20Files/Intermediate/Case%20%23003:%20The%20Miami%20Marina%20Murder.md)|
+- VULN 2 – Hardcoded Database Credentials Leading to Database Access  
+👉 https://eddyzlkfly.github.io/posts/lazywebvuln02/
+
+- VULN 3 – IDOR via Cookie Manipulation  
+👉 https://eddyzlkfly.github.io/posts/lazywebvuln03/
+
+- VULN 4 – Command Injection → Remote Code Execution (RCE)  
+👉 https://eddyzlkfly.github.io/posts/lazywebvuln04/
+
+- VULN 5 – XML External Entity (XXE) Injection  
+👉 https://eddyzlkfly.github.io/posts/lazywebvuln05/
+
+- VULN 6 – Insecure File Upload  
+👉 https://eddyzlkfly.github.io/posts/lazywebvuln06/
+
+- VULN 7 – Local File Inclusion (LFI)
+  
+  👉 https://eddyzlkfly.github.io/posts/lazywebvuln07/
+
+- VULN 8 – Cross-Site Request Forgery (CSRF) → XSS
+  
+  👉 https://eddyzlkfly.github.io/posts/lazywebvuln08/
+
+- VULN 9 – Stored Cross-Site Scripting (Stored XSS) → Session Hijacking  
+👉 https://eddyzlkfly.github.io/posts/lazywebvuln09/
+
+- VULN 10 – Time-Based Blind SQL Injection in Registration Function  
+👉 https://eddyzlkfly.github.io/posts/lazywebvuln10/
+
 ---
 
-### Capture The Flag (CTF)
+## 🧠 SQL Challenges
 
-Writeups for CTF challenges focused on exploitation, reverse engineering, and security analysis.
+### SQLNoir
+- Case #001 – The Vanishing Briefcase  
+👉 https://eddyzlkfly.github.io/posts/sqlnoircase01/
 
-| Challenge | Category | Status |
-|----------|----------|--------|
-| Coming Soon | - | In Progress |
+- Case #002 – The Stolen Sound  
+👉 https://eddyzlkfly.github.io/posts/sqlnoircase02/
+
+- Case #003 – Coral Bay Marina Murder  
+👉 https://eddyzlkfly.github.io/posts/sqlnoircase03/
 
 ---
 
-## Purpose
+## 👻 Hack The Box (HTB)
 
-The goal of this repository is to document my learning process in cybersecurity and build a portfolio of technical writeups covering different types of security challenges.
+- Spookifier  
+👉 https://eddyzlkfly.github.io/posts/HTBSF/
+
+- SpookyPass  
+👉 https://eddyzlkfly.github.io/posts/HTBSP/
+
+- Flag Command
+  
+  👉 https://eddyzlkfly.github.io/posts/HTBFC/
+
+---
+
+## 🛠️ Skills & Focus Areas
+
+- Web Application Security  
+- Penetration Testing  
+- SQL & Database Analysis  
+- Reverse Engineering (Basics)  
+- CTF Problem Solving  
+
+---
+
+## 📌 Notes
+
+- This repository acts as a **central index** for all my writeups  
+- Detailed explanations, screenshots, and steps are available on my blog  
+- All work is for educational purposes  
+
+---
+
+## 🚀 Connect
+
+- GitHub: https://github.com/eddyzlkfly  
+- LinkedIn: https://www.linkedin.com/in/your-linkedin-username/
