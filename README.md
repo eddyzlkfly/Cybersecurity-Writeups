@@ -27,5 +27,4 @@ Welcome to my cybersecurity portfolio. This repository serves as an index of my 
 
 ## 🚀 Connect
 
-- GitHub: https://github.com/eddyzlkfly  
 - LinkedIn: https://www.linkedin.com/in/eddyzlkfly/
